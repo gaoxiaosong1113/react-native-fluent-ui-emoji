@@ -27,9 +27,11 @@ function App(): React.JSX.Element {
               }}>
               <ReactNativeFluentUiEmoji
                 onSelect={emoji => setValue(emoji)}
+                sectionListProps={{}}
                 bottomSheetProps={{}}
                 titleStyle={{}}
-                numColumns={9}>
+                numColumns={9}
+                >
                 <TouchableOpacity>
                   {value ? (
                     <View
